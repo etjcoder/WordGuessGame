@@ -4,8 +4,9 @@
     padding: 0px;
     margin: 0px;
     /* background: black; */
-    background-image: linear-gradient(purple, blue);
+    background-image: url("https://previews.123rf.com/images/romastudio/romastudio1603/romastudio160300280/54088843-healthy-food-background-studio-photo-of-different-fruits-on-white-wooden-table-high-resolution-produ.jpg");
     text-align: center;
+    font-family: 'Indie Flower', cursive;
 }
 
 #banner {
@@ -14,8 +15,31 @@
     height: 100px;
     width: 500px;
     color: white;
-    font-size: 24px;
-    background: lightpink
+    font-size: 12px;
+    background: rgba(204, 224, 294, 0.5);
+    /* opacity: 0.8 */
+}
+
+#banner h1 {
+    overflow: hidden;
+    border-right: .15em solid orange;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation:
+        typing 3.5s steps(40),
+        blink-caret .75s step-end infinite;
+}
+
+/* Typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to {border-color: transparent}
+    50% { border-color: orange }
 }
 
 .space {
@@ -27,7 +51,47 @@
     margin-right: auto;
     height: 500px;
     width: 500px;
-    color: lightpink;
-    background: purple;
+    color: black;
     font-size: 24px;
+    background: rgba(204, 224, 294, 0.5);
+    transition: width 2s, height 2s, font-size 2s, background-color 4s
+}
+
+#game:hover {
+    width: 700px;
+    height: 700px;
+    font-size: 28px;
+    background-color: rgba(214, 294, 304, 0.7)
+}
+
+#left-box {
+    width: 25%;
+    float: left;
+    height: 100%;
+}
+
+#main-box {
+    width: 50%;
+    float: left;
+    height: 100%;
+}
+
+#right-box {
+    width: 25%;
+    float: left;
+    height: 100%
+}
+
+
+#word-blanks {
+    padding: 10px
+}
+
+#guesses-remaining {
+    padding: 25px;
+}
+
+#guessed-letters {
+    padding: 25px;
+    /* height: 100% */
 }

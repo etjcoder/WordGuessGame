@@ -37,7 +37,7 @@ function displayWord(word, letterArr, blankArr) {
 
 function renderGame(blanks) {
     document.getElementById("word-blanks").innerHTML = blanks
-    document.getElementById("guessed-letters").innerHTML = hangManState.guessedLetters
+    document.getElementById("guessed-letters").innerHTML = hangManState.guessedLetters.join(",")
     document.getElementById("guesses-remaining").innerHTML = hangManState.guessesRemaining
     hangManState.readyToPlay = true
     if ( blanks.indexOf(" _ ") === - 1) {
@@ -53,7 +53,7 @@ document.onkeyup = function (event) {
     }
 
     var userGuess = event.key.toLowerCase();
-    hangManState.guessedLetters.push(userGuess)
+    hangManState.guessedLetters.push(userGuess + " ")
 
 
     if (hangManState.letterArray.indexOf(userGuess) === -1) {

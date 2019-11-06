@@ -1,46 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="./app/style/style.css">
-   
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+
     <script src="./app/js/app.js"></script>
     <title>Word Guess Runthrough</title>
 </head>
+
 <body>
-    
+
     <div id="container">
         <div class="space"></div>
         <div id="banner">
-            <h1>Word Guess Game</h1>
+            <h1>Guess what I want for dinner!</h1>
         </div>
         <div class="space"></div>
         <div id="game">
-            <br>
-            <h4>Hang Man:</h4>
-            <div id="word-blanks">
 
+            <div id="left-box">
+                <br>
+                <h5>Guessed Letters</h5>
+                <div id="guessed-letters"> </div>
             </div>
-            <br>
-            <h5>Guessed Letters</h5>
-            <div id="guessed-letters">
 
+            <div id="main-box">
+                <br>
+                <h3>Hang Man:</h3>
+                <div id="word-blanks"></div>
             </div>
-            <br>
-            <h5>Guesses Remaining</h5>
-            <div id="guesses-remaining">
-                
+
+            <div id="right-box">
+                <br>
+                <h5>Guesses Remaining</h5>
+                <div id="guesses-remaining"></div>
             </div>
 
         </div>
-
-
-
-
 
     </div>
 
 </body>
+
 </html>
